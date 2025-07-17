@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Fira Code', monospace;
+    }
+  </style>
+</head>
+
+<body class="font-sans text-gray-800">
+  <!-- Navigation Bar -->
+  <nav class="fixed top-0 w-full bg-white shadow z-50">
+    <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+      <h1 class="text-xl font-bold mb-2 md:mb-0">MyPortfolio</h1>
+      <ul class="flex flex-wrap justify-center space-x-4">
+        <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-500">About</a></li>
+        <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+ <section id="home" class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-100 via-white to-blue-100 pt-32 px-4 text-center">
+    <div class="animate-fade-in-up transition duration-1000 ease-in-out flex flex-col items-center">
+      <div class="flex justify-center">
+        <img src="photo.jpg" alt="Avatar" class="w-32 h-32 md:w-40 md:h-40 rounded-full shadow-xl border-4 border-blue-500 mb-6">
+      </div>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800">Atul Pandey</h2>
+      <p class="text-xl md:text-2xl text-blue-600 mt-2">Front-End Web Developer</p>
+      <p class="italic mt-4 text-sm md:text-base text-gray-600 max-w-xl">"Crafting interactive web experiences that captivate, engage, and inspire. 🚀"</p>
+      <a href="cv.html" download
+        class="mt-6 inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-full shadow hover:bg-blue-700 transition duration-300 animate-bounce">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-20 px-4 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">About Me</h2>
+      <p class="mb-4 text-base md:text-lg text-justify">I'm a passionate front-end developer who enjoys building responsive and accessible websites.
+        I have a strong interest in UI/UX design and enjoy turning designs into functional websites.</p>
+      <p class="mb-4 text-base md:text-lg text-justify">I aim to work on innovative projects and continuously grow my skillset.</p>
+      <div class="grid gap-6 md:grid-cols-2 mt-6">
+        <div class="bg-gray-100 p-4 rounded-lg">
+          <h3 class="font-semibold text-lg mb-2">Skills</h3>
+          <ul class="list-disc list-inside">
+            <li>HTML</li>
+            <li>CSS & Tailwind CSS</li>
+            <li>JavaScript</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg">
+          <h3 class="font-semibold text-lg mb-2">Education</h3>
+          <ul class="list-disc list-inside">
+            <li>B.Tech in Computer Science (2023 - 2027)</li>
+            <li>XYZ University</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 px-4 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Projects</h2>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Project Card -->
+        <div class="bg-white p-4 rounded-lg shadow hover:scale-105 hover:shadow-lg transition">
+          <img src="download (2).jpg" alt="Project 1" class="rounded mb-2 w-full h-40 object-cover">
+          <h3 class="font-semibold text-lg">Portfolio Website</h3>
+          <p class="text-sm text-gray-600">Built using HTML & Tailwind CSS. Showcases my work and contact details.</p>
+          <a href="#" class="text-blue-500 text-sm underline">GitHub</a>
+        </div>
+        <!-- Repeat for other projects -->
+        <div class="bg-white p-4 rounded-lg shadow hover:scale-105 hover:shadow-lg transition">
+          <img src="download.jpg" alt="Project 2" class="rounded mb-2 w-full h-40 object-cover">
+          <h3 class="font-semibold text-lg">Weather App</h3>
+          <p class="text-sm text-gray-600">Weather forecast app using OpenWeather API and Tailwind CSS.</p>
+          <a href="#" class="text-blue-500 text-sm underline">GitHub</a>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow hover:scale-105 hover:shadow-lg transition">
+          <img src="download (1).jpg" alt="Project 3" class="rounded mb-2 w-full h-40 object-cover">
+          <h3 class="font-semibold text-lg">Todo List</h3>
+          <p class="text-sm text-gray-600">Task management app built using JavaScript and Tailwind UI.</p>
+          <a href="#" class="text-blue-500 text-sm underline">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-4 bg-white">
+    <div class="max-w-xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">Contact Me</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Name" class="w-full p-2 border rounded">
+        <input type="email" placeholder="Email" class="w-full p-2 border rounded">
+        <textarea placeholder="Message" rows="4" class="w-full p-2 border rounded"></textarea>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Submit</button>
+      </form>
+      <div class="flex justify-center space-x-4 mt-6">
+        <a href="https://www.linkedin.com/in/atul-pandey-67ab64260/" class="text-gray-600 hover:text-blue-500">LinkedIn</a>
+        <a href="https://github.com/Atulpandeytech" class="text-gray-600 hover:text-blue-500">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-gray-100">
+    <p class="text-sm md:text-base">&copy; 2025 John Doe. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
